@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relLayout1"
+            >
+
+
+            <include layout="@layout/layout_top_tabs"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relLayout2"
+            android:layout_below="@+id/relLayout1"
+            android:layout_above="@+id/bottomNavViewBar">
+            <include layout="@layout/layout_center_viewpager"/>
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="50dp"-->
+                <!--android:padding="20dp"-->
+                <!--android:layout_marginLeft="12dp"-->
+                <!--android:layout_marginRight="12dp"-->
+                <!--android:text="Select File For upload"-->
+                <!--android:background="@drawable/white_rounded_button"-->
+                <!--android:id="@+id/select_button"-->
+                <!--/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/select_button"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:id="@+id/notification"/>-->
+
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="50dp"-->
+                <!--android:padding="20dp"-->
+                <!--android:layout_marginLeft="12dp"-->
+                <!--android:layout_marginRight="12dp"-->
+                <!--android:text="Select File For upload"-->
+                <!--android:background="@drawable/white_rounded_button"-->
+                <!--android:id="@+id/upload_button"-->
+                <!--android:layout_below="@id/notification"-->
+                <!--/>-->
+
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="50dp"-->
+                <!--android:padding="20dp"-->
+                <!--android:layout_marginLeft="12dp"-->
+                <!--android:layout_marginRight="12dp"-->
+                <!--android:text="Select File For Fetching"-->
+                <!--android:background="@drawable/white_rounded_button"-->
+                <!--android:id="@+id/fetch_button"-->
+                <!--android:layout_below="@id/upload_button"-->
+                <!--/>-->
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:id="@+id/bottomNavViewBar"-->
+        <!--android:layout_below="@+id/relLayout2">-->
+        <!--<include layout="@layout/layout_bottom_navigation_view"/>-->
+
+        <!--</RelativeLayout>-->
+
+        <include layout="@layout/layout_bottom_navigation_view"/>
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

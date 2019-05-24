@@ -1,0 +1,37 @@
+<merge xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:background="@color/white">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textSetting"
+            android:text="Profile Settings"
+            android:textSize="35dp"
+            android:textColor="@color/black"
+            android:background="@drawable/grey_border_bottom"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textSetting"
+            android:id="@+id/lvAccountSettings"></ListView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/lvAccountSettings"
+            android:id="@+id/signout_button"
+            android:padding="12dp"
+            android:background="@drawable/white_rounded_button"
+            android:text="Sign Out"/>
+
+    </RelativeLayout>
+
+</merge>
